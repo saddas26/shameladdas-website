@@ -68,6 +68,9 @@ button that is a plain `mailto:` link. To change the address, edit `src/pages/co
 
 ## Deploying (Cloudflare Pages)
 
+Connecting the repository to Cloudflare is a one-time setup. Do these steps only once, when first
+creating the site:
+
 1. Push this repository to GitHub.
 2. In the Cloudflare dashboard, go to **Workers & Pages**, then **Create**, then **Pages**, and connect
    the GitHub repository.
@@ -75,7 +78,9 @@ button that is a plain `mailto:` link. To change the address, edit `src/pages/co
 4. After the first deploy succeeds, add the custom domains (`shameladdas.net` and `shameladdas.com`)
    under the project's **Custom domains** tab, and add a Redirect Rule to send `.com` to `.net`.
 
-Every `git push` to the main branch then rebuilds and redeploys automatically, usually within a minute.
+After that, deployment is automatic. You do not need to open the Cloudflare dashboard again for routine
+updates: every `git push` to the `main` branch triggers Cloudflare to rebuild and redeploy the site by
+itself, usually within a minute. Editing files and pushing to GitHub is the entire deploy.
 
 ## Notes
 
