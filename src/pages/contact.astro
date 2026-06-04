@@ -1,10 +1,5 @@
 ---
 import Base from "../layouts/Base.astro";
-
-// To make the contact form deliver mail: create a free access key at
-// https://web3forms.com (enter the destination email, copy the key) and paste
-// it below. Until then the form renders but will not send.
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
 ---
 
 <Base
@@ -39,36 +34,12 @@ const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
     </div>
 
     <div>
-      <h2>Send a Message</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
-        <input type="hidden" name="subject" value="New message from shameladdas.net" />
-        <input type="hidden" name="from_name" value="shameladdas.net contact form" />
-        <!-- honeypot: bots fill this, humans do not -->
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
-
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" required />
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" required />
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button class="submit" type="submit">Send</button>
-      </form>
-      {
-        WEB3FORMS_ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY" && (
-          <p class="meta" style="color:var(--muted);font-size:0.85rem;margin-top:0.75rem;">
-            Setup note: add a free Web3Forms access key in <code>src/pages/contact.astro</code> to enable
-            delivery.
-          </p>
-        )
-      }
+      <h2>Get in Touch</h2>
+      <p>
+        Email is the best way to reach me, whether about research collaborations, graduate
+        supervision, speaking engagements, or media inquiries.
+      </p>
+      <p><a class="email-button" href="mailto:shamel.addas@queensu.ca">Email Me</a></p>
     </div>
   </div>
 </Base>
