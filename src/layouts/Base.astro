@@ -1,0 +1,81 @@
+---
+import "../styles/global.css";
+
+const { title, description } = Astro.props;
+
+const pageTitle = title ? `${title} — Shamel Addas` : "Shamel Addas, Ph.D.";
+const desc =
+  description ??
+  "Shamel Addas is Associate Dean (Research) and Associate Professor of Digital Technology at the Smith School of Business, Queen's University. Research on human-AI interaction and the dark side of technology use.";
+
+// Active-nav detection (trailing slashes ignored).
+const path = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/publications", label: "Publications" },
+  { href: "/teaching", label: "Teaching" },
+  { href: "/media", label: "Media" },
+  { href: "/contact", label: "Contact" },
+];
+
+const cvHref = "/cv/Addas_CV_May2026.pdf";
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={desc} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">Shamel Addas<span>, Ph.D.</span></a>
+        <nav class="nav" aria-label="Primary">
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={
+                  (item.href === "/" ? path === "/" : path.startsWith(item.href))
+                    ? "page"
+                    : undefined
+                }
+              >
+                {item.label}
+              </a>
+            ))
+          }
+          <a class="cv-button" href={cvHref}>CV (PDF)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container container--wide">
+        <div class="social">
+          <a href="mailto:shamel.addas@queensu.ca">Email</a>
+          <a href="https://www.linkedin.com/in/shameladdas/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/saddas" target="_blank" rel="noopener">Twitter / X</a>
+          <a href={cvHref}>Curriculum Vitae</a>
+        </div>
+        <p>© {year} Shamel Addas. Smith School of Business, Queen's University, Kingston, Ontario.</p>
+      </div>
+    </footer>
+  </body>
+</html>

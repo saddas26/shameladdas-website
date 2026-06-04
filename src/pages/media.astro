@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import yaml from "js-yaml";
+import raw from "../data/media.yaml?raw";
+
+const data = yaml.load(raw) as any;
+const groups = data.groups ?? [];
+---
+
+<Base
+  title="Media"
+  description="Media coverage and commentary featuring Shamel Addas, across television, print, radio, podcasts, and video."
+>
+  <h1>Media</h1>
+  <p class="prose">
+    Selected coverage and commentary across television, print and online, radio and podcasts, and video.
+  </p>
+
+  {
+    groups.map((g: any) => (
+      <section class="section">
+        <h2>{g.name}</h2>
+        <ul class="media-group">
+          {g.items.map((m: any) => (
+            <li>
+              {m.url ? (
+                <a href={m.url} target="_blank" rel="noopener">{m.title}</a>
+              ) : (
+                <span>{m.title}</span>
+              )}
+              {m.outlet ? <span class="outlet">, {m.outlet}</span> : null}
+              {m.date ? <span class="mdate"> ({m.date})</span> : null}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

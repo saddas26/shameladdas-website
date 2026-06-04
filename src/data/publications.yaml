@@ -1,0 +1,249 @@
+# =============================================================================
+# Publications  —  source of truth for the Publications page.
+#
+# To ADD a paper: copy one "- authors:" block, paste it at the TOP of the right
+# list, and edit the fields. Only `authors`, `year`, `title`, and `venue` are
+# required. Optional: `detail` (volume/issue/pages), `tags` (list of badges),
+# `award` (shows a red badge), `note` (extra line), `url` (makes the title a link).
+# Lists render in the order shown here (newest first is the convention).
+# =============================================================================
+
+journal_articles:
+  - authors: "Maghsoodi, N., Nassar, S., Wilson, P.F.R., To, M.N.N., Mannina, S., Addas, S., Sibley, S., Maslove, D., Abolmaesumi, P., and Mousavi, P."
+    year: "Forthcoming"
+    title: "Domain Knowledge Is Power: Leveraging Physiological Priors for Self-Supervised Representation Learning in Electrocardiography"
+    venue: "IEEE Transactions on Biomedical Engineering"
+    tags: ["SJR Q1"]
+
+  - authors: "Khan, A., Brohman, K., and Addas, S."
+    year: 2022
+    title: "The Anatomy of \"Fake News\": Studying False Messages as Digital Objects"
+    venue: "Journal of Information Technology"
+    detail: "37(2), 122-143"
+    tags: ["ABDC A*"]
+
+  - authors: "Brohman, K., Addas, S., Dixon, J., and Pinsonneault, A."
+    year: 2020
+    title: "Cascading Feedback: A Longitudinal Study of a Feedback Ecosystem for Telemonitoring Patients with Chronic Disease"
+    venue: "MIS Quarterly"
+    detail: "44(1), 421-450"
+    tags: ["FT-50", "ABDC A*"]
+    note: "Brohman and Addas contributed equally."
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2018
+    title: "Theorizing the Multilevel Effects of Interruptions and the Role of Communication Technology"
+    venue: "Journal of the Association for Information Systems"
+    detail: "19(11), 1097-1129"
+    tags: ["ABDC A*"]
+
+  - authors: "Addas, S., Pinsonneault, A., and Kane, G.C."
+    year: 2018
+    title: "Converting Email from Drain to Gain"
+    venue: "MIT Sloan Management Review"
+    detail: "59(4), 15-18"
+    tags: ["FT-50", "ABDC A"]
+
+  - authors: "El-Masri, M., Al-Yafi, K., Addas, S., and Tarhini, A."
+    year: 2018
+    title: "Individual Determinants of IT Occupational Outcomes"
+    venue: "Communications of the Association for Information Systems"
+    detail: "42, 481-507"
+    tags: ["ABDC A"]
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2018
+    title: "Email Interruptions and Individual Performance: Is There a Silver Lining?"
+    venue: "MIS Quarterly"
+    detail: "42(2), 381-405"
+    tags: ["FT-50", "ABDC A*"]
+
+  - authors: "Pinsonneault, A., Addas, S., Qian, C., Dakshinamoorthy, V., and Tamblyn, R."
+    year: 2017
+    title: "Integrated Health Information Technology and the Quality of Patient Care: A Natural Experiment"
+    venue: "Journal of Management Information Systems"
+    detail: "34(2), 457-486"
+    tags: ["FT-50", "ABDC A*"]
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2016
+    title: "IT Capabilities and NPD Performance: Examining the Mediating Role of Team Knowledge Processes"
+    venue: "Knowledge Management Research & Practice"
+    detail: "14(1), 76-95"
+    tags: ["ABDC A"]
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2015
+    title: "The Many Faces of IT Interruptions: A Taxonomy and Preliminary Investigation of their Performance Effects"
+    venue: "Information Systems Journal"
+    detail: "25(3), 231-273"
+    tags: ["ABDC A*"]
+
+  - authors: "Rahrovani, Y., Addas, S., and Pinsonneault, A."
+    year: 2014
+    title: "Exploring the Long Shadow of IT Innovation Adoption Decisions on IT Value"
+    venue: "Systèmes d'Information et Management"
+    detail: "19(4), 31-88"
+    tags: ["SJR Q3"]
+
+  - authors: "Addas, S."
+    year: 2010
+    title: "A Call for Engaging Context in HCI/MIS Research with Examples from the Area of Technology Interruptions"
+    venue: "AIS Transactions on Human-Computer Interaction"
+    detail: "2(4), 178-196"
+    tags: ["ABDC A", "SJR Q1"]
+
+conference_papers:
+  - authors: "Mannina, S., and Addas, S."
+    year: 2025
+    title: "Real-Time User Reactions to Misinformation as a Foundation for Tailored Nudge Design"
+    venue: "Proceedings of the 24th pre-ICIS Annual Workshop on HCI Research in MIS, December 13, 2025"
+
+  - authors: "Addas, S., and Rahrovani, Y."
+    year: 2025
+    title: "Teaching with GenAI-Powered Personas: Enhancing Engagement and Research Opportunities in Case-Based Learning"
+    venue: "ICIS TREO Talks (non-peer reviewed), Nashville, TN, December 14, 2025"
+
+  - authors: "Mannina, S., Addas, S., Abolmaesumi, P., Mousavi, P., Maghsoodi, N., Nassar, S., Maslove, D.M., and Sibley, S."
+    year: 2025
+    title: "AI Integration in Fast-Paced, High-Stakes Environments: Lessons From the ICU"
+    venue: "Proceedings of the Health Information Technology Symposium, Nashville, TN, December 14, 2025"
+
+  - authors: "Mahapatra, M., Cameron, A.F., Addas, S., and Spitzmuller, M."
+    year: 2025
+    title: "Multicommunicating During Team Meetings and Team Performance: An Experiment of Multi-level Effects"
+    venue: "Academy of Management Annual Meeting, Copenhagen, Denmark, July 25-29, 2025 (Conference Presentation)"
+
+  - authors: "Mannina, S., and Addas, S."
+    year: 2025
+    title: "Leveraging NeuroIS to Develop Profiles of User Susceptibility to Health Misinformation"
+    venue: "Proceedings of the Vienna Retreat on NeuroIS, Vienna, May 28-30, 2025"
+
+  - authors: "Maslove, D., Maghsoodi, N., Sibley, S., Nassar, S., Mannina, S., Addas, S., Abolmaesumi, P., and Mousavi, P."
+    year: 2024
+    title: "Enhanced AFib Classification: Integrating CNN Features and R-R Intervals in CatBoost"
+    venue: "Machine Learning for Health Care Conference (MLHC 2024), Toronto, Ontario, August 16-17, 2024 (Poster Presentation)"
+
+  - authors: "Mannina, S., Addas, S., Abolmaesumi, P., Mousavi, P., Maghsoodi, N., Nassar, S., Maslove, D., and Sibley, S."
+    year: 2024
+    title: "Digital Nudges in Healthcare Contexts: An Information Systems Perspective"
+    venue: "Proceedings of the 30th Americas Conference on Information Systems, Salt Lake City, UT, August 15-17, 2024"
+
+  - authors: "Ouimet-Grenier, A., and Addas, S."
+    year: 2022
+    title: "AI-Enabled Decision-Making Systems: A Conceptualization and an Agenda for Green IS Research"
+    venue: "Proceedings of the International Conference on Information Systems, Copenhagen, Denmark, December 10-14, 2022"
+
+  - authors: "Mannina, S., and Addas, S."
+    year: 2022
+    title: "Mixed Emotions: Evaluating Reactions to Dynamic Technology Feedback with NeuroIS"
+    venue: "Proceedings of the Vienna Retreat on NeuroIS, Vienna, June 14-16, 2022"
+
+  - authors: "Mannina, S., and Addas, S."
+    year: 2021
+    title: "Understanding the Relationship Between Sources of Feedback and Patient Outcomes in the Digital Health Environment: A Literature Review"
+    venue: "Proceedings of the 49th Administrative Sciences Association of Canada Annual Conference (ASAC), Virtual Conference, June 12-15, 2021"
+    award: "Best Paper Award"
+
+  - authors: "Karmakar, I., and Addas, S."
+    year: 2020
+    title: "Exploring Mindfulness to Mitigate IT Addiction"
+    venue: "Proceedings of the 19th pre-ICIS Annual Workshop on HCI Research in MIS, Virtual Conference, December 13-16, 2020"
+
+  - authors: "Rahrovani, Y., and Addas, S."
+    year: 2019
+    title: "Understanding the Process of IS Switching in the Social Media Context"
+    venue: "Proceedings of the International Conference on Information Systems, Munich, Germany, December 14-18, 2019"
+
+  - authors: "Cameron, A.F., Addas, S., and Spitzmuller, M."
+    year: 2019
+    title: "Multicommunicating During Team Meetings and Its Effects on Team Functioning"
+    venue: "Proceedings of the Vienna Retreat on NeuroIS, Vienna, June 4-6, 2019"
+
+  - authors: "Li, T., Addas, S., and Chan, Y."
+    year: 2018
+    title: "Is Sociomateriality a Viable Lens in IS Research? A Scoping Review"
+    venue: "Proceedings of the 46th Administrative Sciences Association of Canada Annual Conference (ASAC), Toronto, ON, May 27-29, 2018"
+
+  - authors: "Savoli, A., Addas, S., and Fagnot, I."
+    year: 2017
+    title: "Coping with Information Security Stressors in Healthcare"
+    venue: "Proceedings of the 23rd Americas Conference on Information Systems, Boston, MA, August 10-12, 2017"
+
+  - authors: "Savoli, A., Addas, S., and Fagnot, I."
+    year: 2016
+    title: "Too Much of a Good Thing? An Investigation of the Negative Consequences of Information Security in a Healthcare Setting"
+    venue: "Proceedings of the 10th Annual pre-ICIS Workshop on Information Security and Privacy (WISP 2016), Dublin, December 9, 2016"
+
+  - authors: "Goethals, F., and Addas, S."
+    year: 2015
+    title: "Why We Don't Block 3rd Party Trackers: An Attributional Theory Perspective"
+    venue: "Proceedings of the 9th Annual pre-ICIS Workshop on Information Security and Privacy (WISP 2015), Fort Worth, TX, December 13, 2015"
+
+  - authors: "El-Masri, M., and Addas, S."
+    year: 2014
+    title: "Determinants of IT Job Occupations: Integrating Career Anchor Theory and Social Cognitive Career Theory"
+    venue: "Proceedings of the 20th Americas Conference on Information Systems (AMCIS), Savannah, GA, August 7-9, 2014"
+
+  - authors: "Addas, S., and Conway, C.M."
+    year: 2013
+    title: "Not Right Now! Cognitive and Behavioral Impacts of IT Interruption Timing"
+    venue: "12th pre-ICIS Annual Workshop on HCI Research in MIS, Milan, Italy, December 15, 2013 (Poster Presentation)"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2013
+    title: "IT Interruptions and Coordination Effectiveness in Software Development Groups: A Conceptual, Multilevel Model"
+    venue: "Proceedings of the 12th pre-ICIS Annual Workshop on HCI Research in MIS, Milan, Italy, December 15, 2013"
+
+  - authors: "Goethals, F., Addas, S., and Fagnot, I."
+    year: 2012
+    title: "The Effects of Two-Directional Messages about Planned Obsolescence"
+    venue: "Proceedings of the 11th Workshop on e-Business (WEB 2012), Orlando, FL"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2010
+    title: "Information Technology Interruptions in Project Environments: A Taxonomy and Preliminary Performance Investigation"
+    venue: "Proceedings of the 9th pre-ICIS Annual Workshop on HCI Research in MIS, St-Louis, MO, December 12, 2010"
+    award: "Best Paper Award"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2010
+    title: "IT Use and the Interruption of NPD Knowledge Work"
+    venue: "Proceedings of the 43rd Hawaii International Conference on System Sciences, Kauai, HI"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2009
+    title: "Toward a Taxonomy of IT-Enabled Integration in NPD"
+    venue: "Academy of Management Annual Meeting, Chicago, IL (Conference Presentation)"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2008
+    title: "IT and NPD Performance: Unveiling the Mediating Effects of Process Integration and Knowledge Integration"
+    venue: "Proceedings of the 14th Americas Conference on Information Systems (AMCIS), Toronto, ON, August 14-17, 2008"
+
+  - authors: "Addas, S., and Pinsonneault, A."
+    year: 2007
+    title: "IT Capabilities and Firm Performance: A Resource-Based, Alliance Perspective"
+    venue: "Proceedings of the 35th Administrative Sciences Association of Canada Annual Conference (ASAC), Ottawa, ON"
+
+  - authors: "Addas, S."
+    year: 2006
+    title: "IT Business Value: How Agency and Upper Echelon Factors Influence the IT Infrastructure Capability"
+    venue: "Academy of Management Annual Meeting, Atlanta, GA (Conference Presentation)"
+
+  - authors: "Addas, S., and Croteau, A.M."
+    year: 2006
+    title: "The Role of Power in Determining the Mode of IT Governance"
+    venue: "Proceedings of the 34th Administrative Sciences Association of Canada Annual Conference (ASAC), Banff, AB"
+
+  - authors: "Addas, S., Chen, E., and Vahidov, R."
+    year: 2005
+    title: "Factors Influencing the Pre-Adoption of Electronic Negotiation Systems"
+    venue: "Group Decision and Negotiation Annual Conference, Vienna, Austria"
+
+case_studies:
+  - authors: "Addas, S., and Rahrovani, Y."
+    year: 2025
+    title: "Deltacore Analytics: AI Transformation Beyond the Algorithm"
+    venue: "Ivey Publishing"
+    detail: "Case and Teaching Note No. W45949"

@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import Citation from "../components/Citation.astro";
+import yaml from "js-yaml";
+import raw from "../data/publications.yaml?raw";
+
+const data = yaml.load(raw) as any;
+const journal = data.journal_articles ?? [];
+const conference = data.conference_papers ?? [];
+const cases = data.case_studies ?? [];
+---
+
+<Base
+  title="Publications"
+  description="Refereed journal articles, conference proceedings, and case studies by Shamel Addas."
+>
+  <h1>Publications</h1>
+  <p class="prose">
+    The complete record is in the <a href="/cv/Addas_CV_May2026.pdf">CV (PDF)</a>. Journal articles are
+    tagged with quality ratings (FT-50; ABDC; SJR quartile) where applicable.
+  </p>
+
+  <section class="section">
+    <h2>Refereed Journal Articles</h2>
+    <ol class="pub-list">{journal.map((p: any) => <Citation pub={p} />)}</ol>
+  </section>
+
+  <section class="section">
+    <h2>Refereed Conference Proceedings and Presentations</h2>
+    <ol class="pub-list">{conference.map((p: any) => <Citation pub={p} />)}</ol>
+  </section>
+
+  <section class="section">
+    <h2>Case Studies and Teaching Notes</h2>
+    <ol class="pub-list">{cases.map((p: any) => <Citation pub={p} />)}</ol>
+  </section>
+</Base>

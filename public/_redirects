@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects (path-based).
+# Legacy URLs from the old WordPress site are sent to sensible new locations
+# so existing links and search results do not break.
+
+/experiments        /           301
+/experiments/*      /           301
+/clock              /teaching   301
+/clock/*            /teaching   301
+
+# Note: forcing shameladdas.com -> shameladdas.net (host-level canonical) is
+# configured with a Redirect Rule in the Cloudflare dashboard, not here.

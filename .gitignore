@@ -1,0 +1,18 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# os & editor
+.DS_Store
+.vscode/
+
+# local tooling config (not part of the website)
+.claude/
+
+# personal & financial documents at the repo root — do NOT publish.
+# (The published CV lives at public/cv/ and is NOT matched by these rules.)
+/*.pdf
+/*.docx

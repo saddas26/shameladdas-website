@@ -1,0 +1,16 @@
+---
+// Renders a single publication as a numbered citation list item.
+// Expects a `pub` object: { authors, year, title, venue, detail?, tags?, award?, note?, url? }
+const { pub } = Astro.props;
+const trimmed = String(pub.title).trim();
+const needsComma = !/[?!.]$/.test(trimmed); // skip the comma if the title already ends in ? ! or .
+const titleText = `“${trimmed}${needsComma ? "," : ""}”`;
+---
+<li class="pub">
+  {pub.authors} ({pub.year}).{" "}
+  {pub.url ? <a href={pub.url} target="_blank" rel="noopener">{titleText}</a> : titleText}{" "}
+  <em class="venue">{pub.venue}</em>{pub.detail ? `, ${pub.detail}` : ""}.
+  {pub.tags?.map((t: string) => <span class="tag">{t}</span>)}
+  {pub.award ? <span class="tag tag--award">{pub.award}</span> : null}
+  {pub.note ? <span class="detail"> {pub.note}</span> : null}
+</li>

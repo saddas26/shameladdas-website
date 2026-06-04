@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+
+const interests = [
+  "Information technology impacts on individuals and groups",
+  "The dark side of technology use: interruptions, IT addiction, and social media disinformation",
+  "Human interactions with AI: conversational and agentic systems, trust, and knowledge work",
+  "Healthcare information technology (HIT)",
+];
+
+const recognition = [
+  "Distinguished Member, Association for Information Systems (AIS), 2025",
+  "AIS Member Spotlight, Inaugural Issue feature, 2025",
+  "Outreach Award, Smith School of Business, Queen's University, 2024",
+  "New Researcher Achievement Award, Smith School of Business, Queen's University, 2019",
+  "Best Paper Awards: ASAC (2021) and the pre-ICIS Workshop on HCI Research in MIS (2010)",
+];
+---
+
+<Base description="Shamel Addas is Associate Dean (Research) and Associate Professor of Digital Technology at the Smith School of Business, Queen's University. His research spans human-AI interaction, the dark side of technology use, and healthcare IT.">
+  <section class="hero">
+    <img
+      class="hero__photo"
+      src="/images/headshot.jpg"
+      width="1000"
+      height="925"
+      alt="Portrait of Shamel Addas"
+      loading="eager"
+    />
+    <div>
+      <h1>Shamel Addas, Ph.D.</h1>
+      <p class="title">Associate Dean (Research) and Associate Professor of Digital Technology</p>
+      <p class="affil">
+        Smith School of Business, Queen's University &middot; Distinguished Research Fellow of Digital
+        Technology &middot; Visiting Professor, IÉSEG School of Management
+      </p>
+      <p class="lead">
+        Research on human-AI interaction, the dark side of technology use, and healthcare information
+        technology.
+      </p>
+      <div class="quicklinks">
+        <a href="/cv/Addas_CV_May2026.pdf">Curriculum Vitae (PDF)</a>
+        <a href="mailto:shamel.addas@queensu.ca">Email</a>
+        <a href="https://www.linkedin.com/in/shameladdas/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/saddas" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section prose">
+    <h2>About</h2>
+    <p>
+      Shamel Addas is Associate Dean (Research), Associate Professor, and Distinguished Research Fellow of
+      Digital Technology at the Smith School of Business, Queen's University, where he has been a faculty
+      member since 2016, following an earlier appointment at IÉSEG School of Management in France. He holds a
+      PhD from McGill University, an MBA from the John Molson School of Business, and a BSc in Mechanical
+      Engineering from the American University in Cairo.
+    </p>
+    <p>
+      His research examines how digital technology shapes organizational work and decision-making, with a
+      current focus on human-AI interaction: how conversational and agentic AI systems influence trust,
+      knowledge work, and individual performance. He also studies the dark side of technology use, including
+      technology interruptions, addiction, and social media disinformation. His work appears in leading
+      journals such as <em>MIS Quarterly</em>, <em>MIT Sloan Management Review</em>, and the
+      <em>Journal of Management Information Systems</em>.
+    </p>
+    <p>
+      Before entering academia, Dr. Addas held industry roles in consulting, operations management, and
+      production planning. He is a multi-award-winning researcher and educator, teaching across
+      undergraduate, MBA, EMBA, and graduate programs.
+    </p>
+  </section>
+
+  <section class="section prose">
+    <h2>Research Interests</h2>
+    <ul>
+      {interests.map((i) => <li>{i}</li>)}
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Selected Recognition</h2>
+    <ul class="highlights">
+      {recognition.map((r) => <li>{r}</li>)}
+    </ul>
+  </section>
+</Base>
