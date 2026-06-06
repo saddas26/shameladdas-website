@@ -16,3 +16,6 @@ node_modules/
 # (The published CV lives at public/cv/ and is NOT matched by these rules.)
 /*.pdf
 /*.docx
+
+# LinkedIn thumbnail (screenshot of the homepage hero) — used off-site, not part of the website.
+/website_thumbnail.png
