@@ -150,6 +150,10 @@ supervision:
 
   - group: "Master in Business Analytics & Big Data, TIAS School for Business & Society"
     items:
+      - student: "Sanjay Kumar"
+        title: "Predicting Environmental ESG Outcomes from Social and Governance Indicators: A Machine Learning-Based Analysis"
+        years: "2026"
+        role: "Supervisor"
       - student: "Gayeon Lee"
         title: "A Quantitative Comparison of LLM and Human-Generated Customer Review Analysis Reports"
         years: "2025"
