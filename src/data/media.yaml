@@ -1,10 +1,34 @@
 # =============================================================================
 # Media  —  source of truth for the Media page.
-# Grouped coverage and commentary. To add an item, copy a block within the
-# right group. `url` is optional (makes the title a link).
+# Grouped by role, then by medium. To add an item, copy a block within the
+# right group. Optional fields:
+#   url       makes the title a link
+#   role      a small label, e.g. "Expert commentary" or "Research featured"
+#   featured  set to true (with a `blurb`) to pull the item into the
+#             highlight panel at the top of the page
+#   blurb     one-line descriptor shown in the featured panel
 # =============================================================================
 
 groups:
+  - name: "Op-Eds and Invited Commentary"
+    items:
+      - title: "Will It Be AI Automation or Augmentation?"
+        outlet: "Smith Business Insight"
+        date: "March 12, 2025"
+        url: "https://smith.queensu.ca/insight/content/Will-It-Be-AI-Automation-or-Augmentation.php"
+      - title: "How to Build a Better Chatbot"
+        outlet: "Smith Business Insight"
+        date: "November 20, 2024"
+        url: "https://smith.queensu.ca/insight/content/How-to-Build-a-Better-Chatbot.php"
+      - title: "Humanizing AI: Striking the Right Balance for Customer Engagement"
+        outlet: "Marketing News Canada"
+        date: "October 24, 2024"
+        url: "https://marketingnewscanada.com/news/humanizing-ai-striking-the-right-balance-for-customer-engagement"
+      - title: "Don't curse the inflow of emails: It can help you do your job better"
+        outlet: "LSE Business Review"
+        date: "November 15, 2017"
+        url: "https://blogs.lse.ac.uk/businessreview/2017/11/15/dont-curse-the-inflow-of-emails-it-can-help-you-do-your-job-better/"
+
   - name: "Television"
     items:
       - title: "Why people don't take action to protect their online privacy"
@@ -14,51 +38,57 @@ groups:
 
   - name: "Print & Online"
     items:
+      - title: "What is Anthropic's Mythos AI model and why does it have the financial world in a panic?"
+        outlet: "Financial Post (Y. Lau)"
+        date: "April 14, 2026"
+        url: "https://financialpost.com/technology/anthropic-mythos-ai-model-financial-world-panic"
+        role: "Expert commentary"
+        featured: true
+        blurb: "Lead expert voice on the financial-sector implications of Anthropic's Mythos AI model."
       - title: "AI can be great, but Canadians still need humans for personalized financial advice"
         outlet: "The Globe and Mail (A. Seale)"
         date: "March 9, 2026"
+        url: "https://www.theglobeandmail.com/business/adv/article-ai-can-be-great-but-canadians-still-need-humans-for-personalized/"
+        role: "Expert commentary"
       - title: "The Creeping Risk of 'AI Ick'"
         outlet: "Smith Business Insight (D. Aarts)"
         date: "April 15, 2025"
-      - title: "Will It Be AI Automation or Augmentation?"
-        outlet: "Smith Business Insight (by S. Addas)"
-        date: "March 12, 2025"
-      - title: "How to Build a Better Chatbot"
-        outlet: "Smith Business Insight (by S. Addas)"
-        date: "November 20, 2024"
-      - title: "Humanizing AI: Striking the Right Balance for Customer Engagement"
-        outlet: "Marketing News Canada (by S. Addas)"
-        date: "October 24, 2024"
+        role: "Research featured"
       - title: "The Canadian subplot in Netflix's earnings"
         outlet: "The Logic (A. Look)"
         date: "October 18, 2024"
+        role: "Expert commentary"
       - title: "Why We Keep Checking Our Email on Holidays"
         outlet: "Smith Business Insight (D. Aarts)"
         date: "July 3, 2024"
+        role: "Research featured"
       - title: "Taking Email from Drain to Gain"
         outlet: "The Toronto Sun (L. White)"
         date: "May 22, 2024"
+        role: "Research featured"
       - title: "How to make a chatbot customers don't hate"
         outlet: "The Globe and Mail (J. Lindzon)"
         date: "May 7, 2024"
+        role: "Expert commentary"
       - title: "You've got mail ... and anxiety: How to reduce stress from an overflowing inbox"
         outlet: "The Globe and Mail (R. Panjwani)"
         date: "March 24, 2024"
+        role: "Expert commentary"
       - title: "Finding the silver lining of workplace interruptions"
         outlet: "McGill Delve"
         date: "September 15, 2019"
+        role: "Research featured"
       - title: "Research radio and podcast returns"
         outlet: "Queen's Gazette"
         date: "September 19, 2018"
       - title: "Canadians are getting more addicted to smartphones. Should telecom companies be held responsible?"
-        outlet: "The Financial Post (E. Jackson)"
+        outlet: "Financial Post (E. Jackson)"
         date: "December 23, 2017"
+        role: "Expert commentary"
       - title: "Plugging healthcare gaps"
         outlet: "Smith Business Insight (A. Morantz)"
         date: "November 21, 2017"
-      - title: "Don't curse the inflow of emails: It can help you do your job better"
-        outlet: "LSE Business Review (by S. Addas)"
-        date: "November 15, 2017"
+        role: "Research featured"
       - title: "Study suggests ways to make email and other technology interruptions productive"
         outlet: "Therapytoronto.ca (A. Ashley)"
         date: "November 11, 2017"
@@ -74,6 +104,7 @@ groups:
       - title: "Email interruptus"
         outlet: "Smith Business Insight (A. Morantz)"
         date: "August 8, 2017"
+        role: "Research featured"
 
   - name: "Radio & Podcasts"
     items:
@@ -109,6 +140,7 @@ groups:
       - title: "Interview at Queen's University"
         outlet: "Queen's University"
         date: "March 2018"
+        url: "https://www.youtube.com/watch?v=knkEPiAFSKQ"
       - title: "Interview at IÉSEG School of Management"
         outlet: "IÉSEG School of Management"
         date: "December 2012"

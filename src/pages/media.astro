@@ -5,6 +5,11 @@ import raw from "../data/media.yaml?raw";
 
 const data = yaml.load(raw) as any;
 const groups = data.groups ?? [];
+
+// Pull featured items into a highlight panel and show them there instead of
+// repeating them inline within their group.
+const featured = groups.flatMap((g: any) => (g.items ?? []).filter((m: any) => m.featured));
+const featuredSet = new Set(featured);
 ---
 
 <Base
@@ -17,23 +22,54 @@ const groups = data.groups ?? [];
   </p>
 
   {
-    groups.map((g: any) => (
+    featured.length > 0 && (
       <section class="section">
-        <h2>{g.name}</h2>
-        <ul class="media-group">
-          {g.items.map((m: any) => (
-            <li>
-              {m.url ? (
-                <a href={m.url} target="_blank" rel="noopener">{m.title}</a>
-              ) : (
-                <span>{m.title}</span>
-              )}
-              {m.outlet ? <span class="outlet">, {m.outlet}</span> : null}
-              {m.date ? <span class="mdate"> ({m.date})</span> : null}
+        <ul class="featured-list">
+          {featured.map((m: any) => (
+            <li class="featured">
+              <span class="featured__eyebrow">Featured</span>
+              <p class="featured__title">
+                {m.url ? (
+                  <a href={m.url} target="_blank" rel="noopener">{m.title}</a>
+                ) : (
+                  <span>{m.title}</span>
+                )}
+              </p>
+              <p class="featured__meta">
+                {m.outlet}
+                {m.date ? ` · ${m.date}` : ""}
+              </p>
+              {m.blurb ? <p class="featured__blurb">{m.blurb}</p> : null}
             </li>
           ))}
         </ul>
       </section>
-    ))
+    )
+  }
+
+  {
+    groups.map((g: any) => {
+      const items = (g.items ?? []).filter((m: any) => !featuredSet.has(m));
+      if (items.length === 0) return null;
+      return (
+        <section class="section">
+          <h2>{g.name}</h2>
+          <ul class="media-group">
+            {items.map((m: any) => (
+              <li>
+                {m.url ? (
+                  <a href={m.url} target="_blank" rel="noopener">{m.title}</a>
+                ) : (
+                  <span>{m.title}</span>
+                )}
+                {m.outlet ? <span class="outlet">, {m.outlet}</span> : null}
+                {m.date ? <span class="mdate"> ({m.date})</span> : null}
+                {m.role ? <span class="tag tag--role">{m.role}</span> : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+    })
   }
 </Base>

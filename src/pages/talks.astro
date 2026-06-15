@@ -1,0 +1,46 @@
+---
+import Base from "../layouts/Base.astro";
+import yaml from "js-yaml";
+import raw from "../data/talks.yaml?raw";
+
+const data = yaml.load(raw) as any;
+const groups = data.groups ?? [];
+---
+
+<Base
+  title="Talks & Panels"
+  description="Invited speeches, research seminars, and panels by Shamel Addas."
+>
+  <h1>Talks &amp; Panels</h1>
+  <p class="prose">
+    Invited speeches, research seminars, and panel appearances. The complete record is in the
+    <a href="/cv/Addas_CV_Jun2026.pdf">CV (PDF)</a>.
+  </p>
+
+  {
+    groups.map((g: any) => (
+      <section class="section">
+        <h2>{g.name}</h2>
+        <ul class="talk-list">
+          {g.items.map((t: any) => (
+            <li>
+              {t.role ? <span class="tag tag--role">{t.role}</span> : null}
+              {t.title ? (
+                t.url ? (
+                  <a class="talk-head" href={t.url} target="_blank" rel="noopener">{t.title}</a>
+                ) : (
+                  <span class="talk-head">{t.title}</span>
+                )
+              ) : (
+                <span class="talk-head">{t.venue}</span>
+              )}
+              {t.title ? <span class="talk-sub">, {t.venue}</span> : null}
+              {t.date ? <span class="mdate"> ({t.date})</span> : null}
+              {t.note ? <p class="talk-note">{t.note}</p> : null}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>
