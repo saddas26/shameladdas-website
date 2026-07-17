@@ -21,6 +21,7 @@ journal_articles:
     title: "Domain Knowledge Is Power: Leveraging Physiological Priors for Self-Supervised Representation Learning in Electrocardiography"
     venue: "IEEE Transactions on Biomedical Engineering"
     tags: ["SJR Q1"]
+    url: "https://doi.org/10.1109/TBME.2026.3656904"
 
   - authors: "Khan, A., Brohman, K., and Addas, S."
     year: 2022
@@ -28,6 +29,7 @@ journal_articles:
     venue: "Journal of Information Technology"
     detail: "37(2), 122-143"
     tags: ["ABDC A*"]
+    url: "https://doi.org/10.1177/02683962211037693"
 
   - authors: "Brohman, K., Addas, S., Dixon, J., and Pinsonneault, A."
     year: 2020
@@ -36,6 +38,7 @@ journal_articles:
     detail: "44(1), 421-450"
     tags: ["FT-50", "ABDC A*"]
     note: "Brohman and Addas contributed equally."
+    url: "https://doi.org/10.25300/MISQ/2020/15089"
 
   - authors: "Addas, S., and Pinsonneault, A."
     year: 2018
@@ -43,6 +46,7 @@ journal_articles:
     venue: "Journal of the Association for Information Systems"
     detail: "19(11), 1097-1129"
     tags: ["ABDC A*"]
+    url: "https://doi.org/10.17705/1jais.00521"
 
   - authors: "Addas, S., Pinsonneault, A., and Kane, G.C."
     year: 2018
@@ -57,6 +61,7 @@ journal_articles:
     venue: "Communications of the Association for Information Systems"
     detail: "42, 481-507"
     tags: ["ABDC A"]
+    url: "https://doi.org/10.17705/1cais.04218"
 
   - authors: "Addas, S., and Pinsonneault, A."
     year: 2018
@@ -64,6 +69,7 @@ journal_articles:
     venue: "MIS Quarterly"
     detail: "42(2), 381-405"
     tags: ["FT-50", "ABDC A*"]
+    url: "https://doi.org/10.25300/MISQ/2018/13157"
 
   - authors: "Pinsonneault, A., Addas, S., Qian, C., Dakshinamoorthy, V., and Tamblyn, R."
     year: 2017
@@ -71,6 +77,7 @@ journal_articles:
     venue: "Journal of Management Information Systems"
     detail: "34(2), 457-486"
     tags: ["FT-50", "ABDC A*"]
+    url: "https://doi.org/10.1080/07421222.2017.1334477"
 
   - authors: "Addas, S., and Pinsonneault, A."
     year: 2016
@@ -78,6 +85,7 @@ journal_articles:
     venue: "Knowledge Management Research & Practice"
     detail: "14(1), 76-95"
     tags: ["ABDC A"]
+    url: "https://doi.org/10.1057/kmrp.2014.16"
 
   - authors: "Addas, S., and Pinsonneault, A."
     year: 2015
@@ -85,6 +93,7 @@ journal_articles:
     venue: "Information Systems Journal"
     detail: "25(3), 231-273"
     tags: ["ABDC A*"]
+    url: "https://doi.org/10.1111/isj.12064"
 
   - authors: "Rahrovani, Y., Addas, S., and Pinsonneault, A."
     year: 2014
@@ -92,6 +101,7 @@ journal_articles:
     venue: "Systèmes d'Information et Management"
     detail: "19(4), 31-88"
     tags: ["SJR Q3"]
+    url: "https://doi.org/10.3917/sim.144.0031"
 
   - authors: "Addas, S."
     year: 2010
@@ -99,6 +109,7 @@ journal_articles:
     venue: "AIS Transactions on Human-Computer Interaction"
     detail: "2(4), 178-196"
     tags: ["ABDC A", "SJR Q1"]
+    url: "https://doi.org/10.17705/1thci.00022"
 
 conference_papers:
   - authors: "Mannina, S., and Addas, S."
