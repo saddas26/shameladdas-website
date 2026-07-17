@@ -10,7 +10,7 @@
 
 journal_articles:
   - authors: "Nassar, S., Maghsoodi, N., Mannina, S., Addas, S., Sibley, S., Fichtinger, G., Pichora, D., Maslove, D., Abolmaesumi, P., and Mousavi, P."
-    year: 2026
+    year: "Forthcoming"
     title: "A Dataset and Benchmarks for Atrial Fibrillation Detection from Electrocardiograms of Intensive Care Unit Patients"
     venue: "IEEE Transactions on Biomedical Engineering"
     tags: ["SJR Q1"]
