@@ -13,7 +13,7 @@ no server. Editing is just editing text files and pushing to git.
 | Media coverage | `src/data/media.yaml` |
 | Home bio, research interests, recognition | `src/pages/index.astro` |
 | Contact details | `src/pages/contact.astro` |
-| The CV file people download | `public/cv/Addas_CV_Jun2026.pdf` |
+| The CV file people download | `public/cv/Addas_CV.pdf` |
 | Headshot | `public/images/headshot.jpg` |
 | Look and feel (colors, fonts, spacing) | `src/styles/global.css` |
 | Header name and navigation | `src/layouts/Base.astro` |
@@ -49,17 +49,18 @@ npm run preview  # serves the built dist/ to double-check before deploying
 
 ## Updating the CV
 
-Replace `Addas_CV_Jun2026.docx` in the project root with your latest CV, then regenerate the PDF
+Edit `Addas_CV.docx` in the project root. This is your working copy; it is gitignored and never
+published. Bump the `Last updated: <Month> <Year>` line near the top, then regenerate the PDF
 (LibreOffice must be installed):
 
 ```bash
-soffice --headless --convert-to pdf --outdir public/cv "Addas_CV_Jun2026.docx"
+soffice --headless --convert-to pdf --outdir public/cv "Addas_CV.docx"
 ```
 
-If the filename changes (for example, a new month), update the three places that reference it:
-the `cvHref` in `src/layouts/Base.astro` (used by the nav and footer), the hero link in
-`src/pages/index.astro`, and the intro link in `src/pages/publications.astro`. Run
-`grep -rn Addas_CV src/` to find them, then delete the old PDF from `public/cv/`.
+The published file always keeps the same stable name, `public/cv/Addas_CV.pdf`, so no links ever
+need changing and old bookmarks keep working. The only thing to keep current is the human-readable
+date, in two places: the `Last updated` line in the CV itself, and the matching note in the
+publications page intro (`src/pages/publications.astro`). Then commit and push.
 
 ## Contact Page
 
