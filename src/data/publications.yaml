@@ -9,6 +9,13 @@
 # =============================================================================
 
 journal_articles:
+  - authors: "Nassar, S., Maghsoodi, N., Mannina, S., Addas, S., Sibley, S., Fichtinger, G., Pichora, D., Maslove, D., Abolmaesumi, P., and Mousavi, P."
+    year: 2026
+    title: "A Dataset and Benchmarks for Atrial Fibrillation Detection from Electrocardiograms of Intensive Care Unit Patients"
+    venue: "IEEE Transactions on Biomedical Engineering"
+    tags: ["SJR Q1"]
+    url: "https://doi.org/10.1109/TBME.2026.3715145"
+
   - authors: "Maghsoodi, N., Nassar, S., Wilson, P.F.R., To, M.N.N., Mannina, S., Addas, S., Sibley, S., Maslove, D., Abolmaesumi, P., and Mousavi, P."
     year: "Forthcoming"
     title: "Domain Knowledge Is Power: Leveraging Physiological Priors for Self-Supervised Representation Learning in Electrocardiography"
