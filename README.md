@@ -82,6 +82,8 @@ creating the site:
 After that, deployment is automatic. You do not need to open the Cloudflare dashboard again for routine
 updates: every `git push` to the `main` branch triggers Cloudflare to rebuild and redeploy the site by
 itself, usually within a minute. Editing files and pushing to GitHub is the entire deploy.
+Cloudflare builds its own copy of the site on each push, so the local `dist/` folder is never
+uploaded and can be ignored if it looks out of date.
 
 ## Notes
 
